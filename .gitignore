@@ -1,0 +1,20 @@
+# secrets: never commit the real key
+.env
+.env.*
+!.env.example
+
+# local environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.tmp
+
+# archives (the course data is committed unzipped in data/)
+*.zip
+
+# editor and sync clutter
+*.gdoc
+desktop.ini
+.DS_Store
+.claude/

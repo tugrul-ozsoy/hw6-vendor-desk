@@ -1,0 +1,2 @@
+# commit the course data and attack documents byte-for-byte (no line-ending conversion)
+data/** -text

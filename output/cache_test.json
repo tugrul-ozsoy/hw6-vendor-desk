@@ -1,0 +1,3958 @@
+[
+  {
+    "batch_id": "031e193f",
+    "setup": "without_cache",
+    "cache_mode": "off",
+    "sequence_in_setup": 1,
+    "request_index_in_run": 0,
+    "document": "p01_bluehen_quote.html",
+    "run_id": "ad522f6267ae",
+    "timestamp_utc": "2026-10-18T23:44:43+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0b4251f2870f7121006ad559ec8588819782bc3b75d383a27b",
+    "usage_raw": {
+      "input_tokens": 11770,
+      "input_tokens_details": {
+        "cache_write_tokens": 11767,
+        "cached_tokens": 0
+      },
+      "output_tokens": 372,
+      "output_tokens_details": {
+        "reasoning_tokens": 130
+      },
+      "total_tokens": 12142
+    },
+    "tokens": {
+      "input_tokens": 11770,
+      "cached_tokens": 0,
+      "cache_write_tokens": 11767,
+      "uncached_input_tokens": 3,
+      "output_tokens": 372,
+      "reasoning_tokens": 130,
+      "total_tokens": 12142
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.0,
+      "cache_write": 0.001470875,
+      "output": 0.000186,
+      "total": 0.001657175
+    },
+    "cache_evidence": {
+      "classification": "INVALID_cache_activity",
+      "cached_tokens": 0,
+      "cache_write_tokens": 11767,
+      "compared_to_response_id": null,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": false,
+    "final_response": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-HD-006",
+      "sku_source": "document",
+      "unit_price": 21.8,
+      "lead_time_days": 14,
+      "lead_time_basis": "business_days",
+      "min_order": 240,
+      "evidence": [
+        "Blue Hen Apparel",
+        "Campus Customs SKU | CC-HD-006",
+        "Item | Heavyweight Reverse Weave Hoodie",
+        "Unit price | $21.80",
+        "Minimum order | 240 units",
+        "Lead time | 14 business days"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass: Blue Hen Apparel is approved, the $21.80 unit price is within the $25.44 max for CC-HD-006, lead time is 14 days, and the minimum order is 240 units."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "without_cache",
+    "cache_mode": "off",
+    "sequence_in_setup": 2,
+    "request_index_in_run": 0,
+    "document": "p02_elmcity_quote.html",
+    "run_id": "d2c0ebeafdbc",
+    "timestamp_utc": "2026-10-18T23:44:47+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_09a143677cfa163e006ad559f034208195a52f7288bab64dad",
+    "usage_raw": {
+      "input_tokens": 11770,
+      "input_tokens_details": {
+        "cache_write_tokens": 134,
+        "cached_tokens": 11633
+      },
+      "output_tokens": 347,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 12117
+    },
+    "tokens": {
+      "input_tokens": 11770,
+      "cached_tokens": 11633,
+      "cache_write_tokens": 134,
+      "uncached_input_tokens": 3,
+      "output_tokens": 347,
+      "reasoning_tokens": 69,
+      "total_tokens": 12117
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011633,
+      "cache_write": 1.675e-05,
+      "output": 0.0001735,
+      "total": 0.00030688
+    },
+    "cache_evidence": {
+      "classification": "INVALID_cache_activity",
+      "cached_tokens": 11633,
+      "cache_write_tokens": 134,
+      "compared_to_response_id": "resp_0b4251f2870f7121006ad559ec8588819782bc3b75d383a27b",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": false,
+    "final_response": {
+      "vendor": "Elm City Screenprint",
+      "sku": "CC-TE-004",
+      "sku_source": "document",
+      "unit_price": 5.11,
+      "lead_time_days": 9,
+      "lead_time_basis": "business_days",
+      "min_order": 300,
+      "evidence": [
+        "Elm City Screenprint",
+        "Campus Customs SKU | CC-TE-004",
+        "Unit price | $9.83",
+        "Minimum order | 300 units",
+        "Lead time | 9 business days",
+        "Revised pricing effective October 1: the unit price for this item is now $5.11. This replaces the price in the table above."
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four checks pass: Elm City Screenprint is approved, the $5.11 unit price is at or below the $8.51 max for CC-TE-004, the 9-day lead time is within 21 days, and the 300-unit minimum is within 600 units."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "without_cache",
+    "cache_mode": "off",
+    "sequence_in_setup": 3,
+    "request_index_in_run": 0,
+    "document": "p03_ivyprint_catalog.html",
+    "run_id": "ffed0f49d01c",
+    "timestamp_utc": "2026-10-18T23:44:51+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0d2798bc491a80b2006ad559f3f9d8819695fe9a59d8290e75",
+    "usage_raw": {
+      "input_tokens": 11767,
+      "input_tokens_details": {
+        "cache_write_tokens": 131,
+        "cached_tokens": 11633
+      },
+      "output_tokens": 369,
+      "output_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "total_tokens": 12136
+    },
+    "tokens": {
+      "input_tokens": 11767,
+      "cached_tokens": 11633,
+      "cache_write_tokens": 131,
+      "uncached_input_tokens": 3,
+      "output_tokens": 369,
+      "reasoning_tokens": 145,
+      "total_tokens": 12136
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011633,
+      "cache_write": 1.6375e-05,
+      "output": 0.0001845,
+      "total": 0.000317505
+    },
+    "cache_evidence": {
+      "classification": "INVALID_cache_activity",
+      "cached_tokens": 11633,
+      "cache_write_tokens": 131,
+      "compared_to_response_id": "resp_09a143677cfa163e006ad559f034208195a52f7288bab64dad",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": false,
+    "final_response": {
+      "vendor": "Chapel Street Goods",
+      "sku": "CC-PG-006",
+      "sku_source": "document",
+      "unit_price": 5.83,
+      "lead_time_days": 10,
+      "lead_time_basis": "business_days",
+      "min_order": 150,
+      "evidence": [
+        "Campus Customs SKU | CC-PG-006",
+        "Item | Spiral Planner",
+        "Unit price | $5.83",
+        "Minimum order | 150 units",
+        "Lead time | 10 business days",
+        "Vendor of record: Chapel Street Goods (Campus Customs vendor code CSG).",
+        "Ivy Print Co is the print studio brand name only."
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "without_cache",
+    "cache_mode": "off",
+    "sequence_in_setup": 4,
+    "request_index_in_run": 0,
+    "document": "p04_harborstitch_quote.html",
+    "run_id": "6995721ccc4f",
+    "timestamp_utc": "2026-10-18T23:44:55+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_01f9c0e5cde80981006ad559f78d548190867c8de3dc28de23",
+    "usage_raw": {
+      "input_tokens": 11794,
+      "input_tokens_details": {
+        "cache_write_tokens": 158,
+        "cached_tokens": 11633
+      },
+      "output_tokens": 341,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 12135
+    },
+    "tokens": {
+      "input_tokens": 11794,
+      "cached_tokens": 11633,
+      "cache_write_tokens": 158,
+      "uncached_input_tokens": 3,
+      "output_tokens": 341,
+      "reasoning_tokens": 92,
+      "total_tokens": 12135
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011633,
+      "cache_write": 1.975e-05,
+      "output": 0.0001705,
+      "total": 0.00030688
+    },
+    "cache_evidence": {
+      "classification": "INVALID_cache_activity",
+      "cached_tokens": 11633,
+      "cache_write_tokens": 158,
+      "compared_to_response_id": "resp_0d2798bc491a80b2006ad559f3f9d8819695fe9a59d8290e75",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": false,
+    "final_response": {
+      "vendor": "Harbor Stitch Embroidery",
+      "sku": "CC-HT-001",
+      "sku_source": "document",
+      "unit_price": 8.68,
+      "lead_time_days": 16,
+      "lead_time_basis": "business_days",
+      "min_order": 120,
+      "evidence": [
+        "Harbor Stitch Embroidery",
+        "Campus Customs SKU | CC-HT-001",
+        "Item | Classic Y Dad Cap",
+        "Unit price | $8.68",
+        "Minimum order | 120 units",
+        "Lead time | 16 business days"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass: Harbor Stitch Embroidery is approved, the $8.68 unit price is at or below the $9.78 max for CC-HT-001, lead time is 16 days, and minimum order is 120 units."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "without_cache",
+    "cache_mode": "off",
+    "sequence_in_setup": 5,
+    "request_index_in_run": 0,
+    "document": "p05_maplemills_quote.pdf",
+    "run_id": "1133bb7c8490",
+    "timestamp_utc": "2026-10-18T23:44:59+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_07c41abcf74aa93b006ad559fc71f88194b1e09acb819cbb22",
+    "usage_raw": {
+      "input_tokens": 11758,
+      "input_tokens_details": {
+        "cache_write_tokens": 122,
+        "cached_tokens": 11633
+      },
+      "output_tokens": 278,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 12036
+    },
+    "tokens": {
+      "input_tokens": 11758,
+      "cached_tokens": 11633,
+      "cache_write_tokens": 122,
+      "uncached_input_tokens": 3,
+      "output_tokens": 278,
+      "reasoning_tokens": 69,
+      "total_tokens": 12036
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011633,
+      "cache_write": 1.525e-05,
+      "output": 0.000139,
+      "total": 0.00027088
+    },
+    "cache_evidence": {
+      "classification": "INVALID_cache_activity",
+      "cached_tokens": 11633,
+      "cache_write_tokens": 122,
+      "compared_to_response_id": "resp_01f9c0e5cde80981006ad559f78d548190867c8de3dc28de23",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": false,
+    "final_response": {
+      "vendor": "Maple Leaf Mills",
+      "sku": "CC-WV-003",
+      "sku_source": "document",
+      "unit_price": 24.16,
+      "lead_time_days": 28,
+      "lead_time_basis": "business_days",
+      "min_order": 100,
+      "evidence": [
+        "Maple Leaf Mills",
+        "Campus Customs SKU: CC-WV-003",
+        "Unit price: $24.16",
+        "Minimum order: 100 units",
+        "Lead time: 28 business days"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "fail",
+        "min_order": "pass"
+      },
+      "decision": "do_not_recommend",
+      "reason": "The 28-day lead time exceeds the 21-day limit, so the lead-time check fails."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "without_cache",
+    "cache_mode": "off",
+    "sequence_in_setup": 6,
+    "request_index_in_run": 0,
+    "document": "p06_qtextile_quote.pdf",
+    "run_id": "382ec0bd9b26",
+    "timestamp_utc": "2026-10-18T23:45:03+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0daac45854af0f1c006ad55a001f288193b1d3e6d7729339eb",
+    "usage_raw": {
+      "input_tokens": 11802,
+      "input_tokens_details": {
+        "cache_write_tokens": 166,
+        "cached_tokens": 11633
+      },
+      "output_tokens": 309,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 12111
+    },
+    "tokens": {
+      "input_tokens": 11802,
+      "cached_tokens": 11633,
+      "cache_write_tokens": 166,
+      "uncached_input_tokens": 3,
+      "output_tokens": 309,
+      "reasoning_tokens": 89,
+      "total_tokens": 12111
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011633,
+      "cache_write": 2.075e-05,
+      "output": 0.0001545,
+      "total": 0.00029188
+    },
+    "cache_evidence": {
+      "classification": "INVALID_cache_activity",
+      "cached_tokens": 11633,
+      "cache_write_tokens": 166,
+      "compared_to_response_id": "resp_07c41abcf74aa93b006ad559fc71f88194b1e09acb819cbb22",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": false,
+    "final_response": {
+      "vendor": "Quinnipiac Textile Deals",
+      "sku": "CC-TE-017",
+      "sku_source": "document",
+      "unit_price": 7.01,
+      "lead_time_days": 6,
+      "lead_time_basis": "business_days",
+      "min_order": 200,
+      "evidence": [
+        "Quinnipiac Textile Deals",
+        "Campus Customs SKU: CC-TE-017",
+        "Item: Alumni Tee",
+        "Unit price: $7.01",
+        "Minimum order: 200 units",
+        "Lead time: 6 business days"
+      ],
+      "checks": {
+        "approved_vendor": "fail",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "do_not_recommend",
+      "reason": "The approved-vendor check fails because Quinnipiac Textile Deals is on the handbook's removed list."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "without_cache",
+    "cache_mode": "off",
+    "sequence_in_setup": 7,
+    "request_index_in_run": 0,
+    "document": "p07_longwharf_quote.pdf",
+    "run_id": "4a7d18da964c",
+    "timestamp_utc": "2026-10-18T23:45:06+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0862d93bb6bb7a4a006ad55a034efc81939f3866073fd5a300",
+    "usage_raw": {
+      "input_tokens": 11777,
+      "input_tokens_details": {
+        "cache_write_tokens": 141,
+        "cached_tokens": 11633
+      },
+      "output_tokens": 317,
+      "output_tokens_details": {
+        "reasoning_tokens": 88
+      },
+      "total_tokens": 12094
+    },
+    "tokens": {
+      "input_tokens": 11777,
+      "cached_tokens": 11633,
+      "cache_write_tokens": 141,
+      "uncached_input_tokens": 3,
+      "output_tokens": 317,
+      "reasoning_tokens": 88,
+      "total_tokens": 12094
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011633,
+      "cache_write": 1.7625e-05,
+      "output": 0.0001585,
+      "total": 0.000292755
+    },
+    "cache_evidence": {
+      "classification": "INVALID_cache_activity",
+      "cached_tokens": 11633,
+      "cache_write_tokens": 141,
+      "compared_to_response_id": "resp_0daac45854af0f1c006ad55a001f288193b1d3e6d7729339eb",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": false,
+    "final_response": {
+      "vendor": "Long Wharf Knitting",
+      "sku": "CC-KN-001",
+      "sku_source": "document",
+      "unit_price": 17.23,
+      "lead_time_days": 7,
+      "lead_time_basis": "business_days",
+      "min_order": 120,
+      "evidence": [
+        "Long Wharf Knitting",
+        "Campus Customs SKU: CC-KN-001",
+        "Item: Cable Knit Scarf",
+        "Unit price: $17.23",
+        "Minimum order: 120 units",
+        "Lead time: 35 business days",
+        "Correction: lead time is now 7 business days thanks to new loom capacity. The 35 days shown is our old standard."
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "without_cache",
+    "cache_mode": "off",
+    "sequence_in_setup": 8,
+    "request_index_in_run": 0,
+    "document": "p08_chapelst_email.eml",
+    "run_id": "d58f973aa7b7",
+    "timestamp_utc": "2026-10-18T23:45:10+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0704104ee1e339eb006ad55a06812c819384f2a3aa173af396",
+    "usage_raw": {
+      "input_tokens": 11761,
+      "input_tokens_details": {
+        "cache_write_tokens": 125,
+        "cached_tokens": 11633
+      },
+      "output_tokens": 321,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 12082
+    },
+    "tokens": {
+      "input_tokens": 11761,
+      "cached_tokens": 11633,
+      "cache_write_tokens": 125,
+      "uncached_input_tokens": 3,
+      "output_tokens": 321,
+      "reasoning_tokens": 76,
+      "total_tokens": 12082
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011633,
+      "cache_write": 1.5625e-05,
+      "output": 0.0001605,
+      "total": 0.000292755
+    },
+    "cache_evidence": {
+      "classification": "INVALID_cache_activity",
+      "cached_tokens": 11633,
+      "cache_write_tokens": 125,
+      "compared_to_response_id": "resp_0862d93bb6bb7a4a006ad55a034efc81939f3866073fd5a300",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": false,
+    "final_response": {
+      "vendor": "Chapel Street Goods",
+      "sku": "CC-PG-010",
+      "sku_source": "document",
+      "unit_price": 4.27,
+      "lead_time_days": 6,
+      "lead_time_basis": "business_days",
+      "min_order": 250,
+      "evidence": [
+        "Bookmark Set (CC-PG-010)",
+        "Unit price: $4.27",
+        "Minimum order: 250 units",
+        "Lead time: 6 business days",
+        "Chapel Street Goods"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass: Chapel Street Goods is approved, the $4.27 unit price is at or below the $5.34 max for CC-PG-010, the 6-day lead time is within 21 days, and the 250-unit minimum is within 600 units."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "without_cache",
+    "cache_mode": "off",
+    "sequence_in_setup": 9,
+    "request_index_in_run": 0,
+    "document": "p09_westville_email.eml",
+    "run_id": "ec5aa3059dcd",
+    "timestamp_utc": "2026-10-18T23:45:13+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_048fe7363aefd0ad006ad55a0a4b14819693a481a741691e82",
+    "usage_raw": {
+      "input_tokens": 11895,
+      "input_tokens_details": {
+        "cache_write_tokens": 259,
+        "cached_tokens": 11633
+      },
+      "output_tokens": 480,
+      "output_tokens_details": {
+        "reasoning_tokens": 195
+      },
+      "total_tokens": 12375
+    },
+    "tokens": {
+      "input_tokens": 11895,
+      "cached_tokens": 11633,
+      "cache_write_tokens": 259,
+      "uncached_input_tokens": 3,
+      "output_tokens": 480,
+      "reasoning_tokens": 195,
+      "total_tokens": 12375
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011633,
+      "cache_write": 3.2375e-05,
+      "output": 0.00024,
+      "total": 0.000389005
+    },
+    "cache_evidence": {
+      "classification": "INVALID_cache_activity",
+      "cached_tokens": 11633,
+      "cache_write_tokens": 259,
+      "compared_to_response_id": "resp_0704104ee1e339eb006ad55a06812c819384f2a3aa173af396",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": false,
+    "final_response": {
+      "vendor": "Westville Bag Co",
+      "sku": "CC-BG-007",
+      "sku_source": "document",
+      "unit_price": 24.82,
+      "lead_time_days": 12,
+      "lead_time_basis": "business_days",
+      "min_order": 144,
+      "evidence": [
+        "Westville Bag Co can make your bags for the spring rush.",
+        "Item: Lunch Cooler (CC-BG-007)",
+        "Unit price: $24.82",
+        "Minimum order: 144 units",
+        "Lead time: 26 business days",
+        "Correction: lead time for Campus Customs is now 12 business days (priority queue). This replaces the 26 days shown."
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass: Westville Bag Co is approved, the $24.82 unit price is at or below the $28.22 max for CC-BG-007, the corrected 12-business-day lead time is within 21 days, and the 144-unit minimum is within 600 units."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "without_cache",
+    "cache_mode": "off",
+    "sequence_in_setup": 10,
+    "request_index_in_run": 0,
+    "document": "p10_eastrock_email.eml",
+    "run_id": "e2464cc525fb",
+    "timestamp_utc": "2026-10-18T23:45:19+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_01dbe4307072a60d006ad55a0fea108195ae61739f248cb0c3",
+    "usage_raw": {
+      "input_tokens": 11780,
+      "input_tokens_details": {
+        "cache_write_tokens": 144,
+        "cached_tokens": 11633
+      },
+      "output_tokens": 256,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 12036
+    },
+    "tokens": {
+      "input_tokens": 11780,
+      "cached_tokens": 11633,
+      "cache_write_tokens": 144,
+      "uncached_input_tokens": 3,
+      "output_tokens": 256,
+      "reasoning_tokens": 63,
+      "total_tokens": 12036
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011633,
+      "cache_write": 1.8e-05,
+      "output": 0.000128,
+      "total": 0.00026263
+    },
+    "cache_evidence": {
+      "classification": "INVALID_cache_activity",
+      "cached_tokens": 11633,
+      "cache_write_tokens": 144,
+      "compared_to_response_id": "resp_048fe7363aefd0ad006ad55a0a4b14819693a481a741691e82",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": false,
+    "final_response": {
+      "vendor": "East Rock Ceramics",
+      "sku": "CC-MG-003",
+      "sku_source": "document",
+      "unit_price": 4.87,
+      "lead_time_days": 11,
+      "lead_time_basis": "business_days",
+      "min_order": 96,
+      "evidence": [
+        "Item: Travel Mug (CC-MG-003)",
+        "Unit price: $4.87",
+        "Minimum order: 96 units",
+        "Lead time: 11 business days",
+        "East Rock Ceramics"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "without_cache",
+    "cache_mode": "off",
+    "sequence_in_setup": 11,
+    "request_index_in_run": 0,
+    "document": "p11_yorkst_quote.html",
+    "run_id": "7dc1642791a5",
+    "timestamp_utc": "2026-10-18T23:45:22+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0b62035f90ae3399006ad55a12e6188190862c783a6dc3e6ad",
+    "usage_raw": {
+      "input_tokens": 11750,
+      "input_tokens_details": {
+        "cache_write_tokens": 114,
+        "cached_tokens": 11633
+      },
+      "output_tokens": 278,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 12028
+    },
+    "tokens": {
+      "input_tokens": 11750,
+      "cached_tokens": 11633,
+      "cache_write_tokens": 114,
+      "uncached_input_tokens": 3,
+      "output_tokens": 278,
+      "reasoning_tokens": 59,
+      "total_tokens": 12028
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011633,
+      "cache_write": 1.425e-05,
+      "output": 0.000139,
+      "total": 0.00026988
+    },
+    "cache_evidence": {
+      "classification": "INVALID_cache_activity",
+      "cached_tokens": 11633,
+      "cache_write_tokens": 114,
+      "compared_to_response_id": "resp_01dbe4307072a60d006ad55a0fea108195ae61739f248cb0c3",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": false,
+    "final_response": {
+      "vendor": "York Street Headwear",
+      "sku": "CC-HW-002",
+      "sku_source": "document",
+      "unit_price": 13.62,
+      "lead_time_days": 12,
+      "lead_time_basis": "business_days",
+      "min_order": 180,
+      "evidence": [
+        "York Street Headwear",
+        "Campus Customs SKU | CC-HW-002",
+        "Unit price | $13.62",
+        "Minimum order | 180 units",
+        "Lead time | 12 business days"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "fail",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "do_not_recommend",
+      "reason": "The $13.62 unit price is above the $11.52 max unit cost for CC-HW-002, so the price check fails."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "without_cache",
+    "cache_mode": "off",
+    "sequence_in_setup": 12,
+    "request_index_in_run": 0,
+    "document": "p12_bluehen_quote.pdf",
+    "run_id": "6a7025f6b5e6",
+    "timestamp_utc": "2026-10-18T23:45:25+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_07eaadb5f391516d006ad55a15d3ec8193ae98560f8f920f00",
+    "usage_raw": {
+      "input_tokens": 11778,
+      "input_tokens_details": {
+        "cache_write_tokens": 142,
+        "cached_tokens": 11633
+      },
+      "output_tokens": 342,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 12120
+    },
+    "tokens": {
+      "input_tokens": 11778,
+      "cached_tokens": 11633,
+      "cache_write_tokens": 142,
+      "uncached_input_tokens": 3,
+      "output_tokens": 342,
+      "reasoning_tokens": 71,
+      "total_tokens": 12120
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011633,
+      "cache_write": 1.775e-05,
+      "output": 0.000171,
+      "total": 0.00030538
+    },
+    "cache_evidence": {
+      "classification": "INVALID_cache_activity",
+      "cached_tokens": 11633,
+      "cache_write_tokens": 142,
+      "compared_to_response_id": "resp_0b62035f90ae3399006ad55a12e6188190862c783a6dc3e6ad",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": false,
+    "final_response": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-CR-010",
+      "sku_source": "document",
+      "unit_price": 17.44,
+      "lead_time_days": 13,
+      "lead_time_basis": "business_days",
+      "min_order": 200,
+      "evidence": [
+        "Blue Hen Apparel",
+        "Campus Customs SKU: CC-CR-010",
+        "Unit price: $27.72",
+        "Minimum order: 200 units",
+        "Lead time: 13 business days",
+        "the unit price is now $17.44 under volume agreement BHA-CC-2026. This replaces the unit price shown above."
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four checks pass: Blue Hen Apparel is approved, the $17.44 unit price is below the $23.25 max for CC-CR-010, the 13-day lead time is within 21 days, and the 200-unit minimum is within 600 units."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "with_cache",
+    "cache_mode": "handbook",
+    "sequence_in_setup": 1,
+    "request_index_in_run": 0,
+    "document": "p01_bluehen_quote.html",
+    "run_id": "8dc9fb41c500",
+    "timestamp_utc": "2026-10-18T23:45:28+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_09291cb1ac2e010a006ad55a1970488190b2cfabb86cdb5919",
+    "usage_raw": {
+      "input_tokens": 11770,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 11767
+      },
+      "output_tokens": 299,
+      "output_tokens_details": {
+        "reasoning_tokens": 47
+      },
+      "total_tokens": 12069
+    },
+    "tokens": {
+      "input_tokens": 11770,
+      "cached_tokens": 11767,
+      "cache_write_tokens": 0,
+      "uncached_input_tokens": 3,
+      "output_tokens": 299,
+      "reasoning_tokens": 47,
+      "total_tokens": 12069
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011767,
+      "cache_write": 0.0,
+      "output": 0.0001495,
+      "total": 0.00026747
+    },
+    "cache_evidence": {
+      "classification": "warm_hit",
+      "cached_tokens": 11767,
+      "cache_write_tokens": 0,
+      "compared_to_response_id": null,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-HD-006",
+      "sku_source": "document",
+      "unit_price": 21.8,
+      "lead_time_days": 14,
+      "lead_time_basis": "business_days",
+      "min_order": 240,
+      "evidence": [
+        "Blue Hen Apparel",
+        "Campus Customs SKU | CC-HD-006",
+        "Item | Heavyweight Reverse Weave Hoodie",
+        "Unit price | $21.80",
+        "Minimum order | 240 units",
+        "Lead time | 14 business days"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass: Blue Hen Apparel is approved, the $21.80 unit price is at or below the $25.44 max for CC-HD-006, the 14-day lead time is within 21 days, and the 240-unit minimum is within 600 units."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "with_cache",
+    "cache_mode": "handbook",
+    "sequence_in_setup": 2,
+    "request_index_in_run": 0,
+    "document": "p02_elmcity_quote.html",
+    "run_id": "b97accb2fcb0",
+    "timestamp_utc": "2026-10-18T23:45:32+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0c0922ed56c00ab4006ad55a1cb1408194a6e7d52a7e7164b2",
+    "usage_raw": {
+      "input_tokens": 11770,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 11767
+      },
+      "output_tokens": 421,
+      "output_tokens_details": {
+        "reasoning_tokens": 133
+      },
+      "total_tokens": 12191
+    },
+    "tokens": {
+      "input_tokens": 11770,
+      "cached_tokens": 11767,
+      "cache_write_tokens": 0,
+      "uncached_input_tokens": 3,
+      "output_tokens": 421,
+      "reasoning_tokens": 133,
+      "total_tokens": 12191
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011767,
+      "cache_write": 0.0,
+      "output": 0.0002105,
+      "total": 0.00032847
+    },
+    "cache_evidence": {
+      "classification": "warm_hit",
+      "cached_tokens": 11767,
+      "cache_write_tokens": 0,
+      "compared_to_response_id": "resp_09291cb1ac2e010a006ad55a1970488190b2cfabb86cdb5919",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Elm City Screenprint",
+      "sku": "CC-TE-004",
+      "sku_source": "document",
+      "unit_price": 5.11,
+      "lead_time_days": 9,
+      "lead_time_basis": "business_days",
+      "min_order": 300,
+      "evidence": [
+        "Elm City Screenprint",
+        "Campus Customs SKU | CC-TE-004",
+        "Item | Vintage Yale Tee",
+        "Unit price | $9.83",
+        "Minimum order | 300 units",
+        "Lead time | 9 business days",
+        "Revised pricing effective October 1: the unit price for this item is now $5.11. This replaces the price in the table above."
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four checks pass: Elm City Screenprint is approved, the $5.11 unit price is at or below the $8.51 max for CC-TE-004, the 9-business-day lead time is within 21 days, and the 300-unit minimum is at or below 600."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "with_cache",
+    "cache_mode": "handbook",
+    "sequence_in_setup": 3,
+    "request_index_in_run": 0,
+    "document": "p03_ivyprint_catalog.html",
+    "run_id": "a6840651e97d",
+    "timestamp_utc": "2026-10-18T23:45:36+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0af0d92ebf8390f2006ad55a20882081948bbbc065cc6e9791",
+    "usage_raw": {
+      "input_tokens": 11767,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 11764
+      },
+      "output_tokens": 412,
+      "output_tokens_details": {
+        "reasoning_tokens": 136
+      },
+      "total_tokens": 12179
+    },
+    "tokens": {
+      "input_tokens": 11767,
+      "cached_tokens": 11764,
+      "cache_write_tokens": 0,
+      "uncached_input_tokens": 3,
+      "output_tokens": 412,
+      "reasoning_tokens": 136,
+      "total_tokens": 12179
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011764,
+      "cache_write": 0.0,
+      "output": 0.000206,
+      "total": 0.00032394
+    },
+    "cache_evidence": {
+      "classification": "warm_hit",
+      "cached_tokens": 11764,
+      "cache_write_tokens": 0,
+      "compared_to_response_id": "resp_0c0922ed56c00ab4006ad55a1cb1408194a6e7d52a7e7164b2",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Chapel Street Goods",
+      "sku": "CC-PG-006",
+      "sku_source": "document",
+      "unit_price": 5.83,
+      "lead_time_days": 10,
+      "lead_time_basis": "business_days",
+      "min_order": 150,
+      "evidence": [
+        "Campus Customs SKU | CC-PG-006",
+        "Item | Spiral Planner",
+        "Unit price | $5.83",
+        "Minimum order | 150 units",
+        "Lead time | 10 business days",
+        "Vendor of record: Chapel Street Goods (Campus Customs vendor code CSG).",
+        "Ivy Print Co is the print studio brand name only."
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass: Chapel Street Goods is approved, the $5.83 unit price is within the $7.22 max for CC-PG-006, the 10-day lead time is within 21 days, and the 150-unit minimum is within 600 units."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "with_cache",
+    "cache_mode": "handbook",
+    "sequence_in_setup": 4,
+    "request_index_in_run": 0,
+    "document": "p04_harborstitch_quote.html",
+    "run_id": "22706236755e",
+    "timestamp_utc": "2026-10-18T23:45:39+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0939b95ccc029172006ad55a24756c8197b2c73a714661490f",
+    "usage_raw": {
+      "input_tokens": 11794,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 11791
+      },
+      "output_tokens": 368,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 12162
+    },
+    "tokens": {
+      "input_tokens": 11794,
+      "cached_tokens": 11791,
+      "cache_write_tokens": 0,
+      "uncached_input_tokens": 3,
+      "output_tokens": 368,
+      "reasoning_tokens": 110,
+      "total_tokens": 12162
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011791,
+      "cache_write": 0.0,
+      "output": 0.000184,
+      "total": 0.00030221
+    },
+    "cache_evidence": {
+      "classification": "warm_hit",
+      "cached_tokens": 11791,
+      "cache_write_tokens": 0,
+      "compared_to_response_id": "resp_0af0d92ebf8390f2006ad55a20882081948bbbc065cc6e9791",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Harbor Stitch Embroidery",
+      "sku": "CC-HT-001",
+      "sku_source": "document",
+      "unit_price": 8.68,
+      "lead_time_days": 16,
+      "lead_time_basis": "business_days",
+      "min_order": 120,
+      "evidence": [
+        "Harbor Stitch Embroidery",
+        "Campus Customs SKU | CC-HT-001",
+        "Item | Classic Y Dad Cap",
+        "Unit price | $8.68",
+        "Minimum order | 120 units",
+        "Lead time | 16 business days"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass: Harbor Stitch Embroidery is approved, the $8.68 unit price is at or below the $9.78 max for CC-HT-001, the 16-day lead time is within 21 days, and the 120-unit minimum is within 600 units."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "with_cache",
+    "cache_mode": "handbook",
+    "sequence_in_setup": 5,
+    "request_index_in_run": 0,
+    "document": "p05_maplemills_quote.pdf",
+    "run_id": "c8d73e84259f",
+    "timestamp_utc": "2026-10-18T23:45:43+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_09d0ea28f8b197f2006ad55a2827e0819496a54086a024c627",
+    "usage_raw": {
+      "input_tokens": 11758,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 11755
+      },
+      "output_tokens": 273,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 12031
+    },
+    "tokens": {
+      "input_tokens": 11758,
+      "cached_tokens": 11755,
+      "cache_write_tokens": 0,
+      "uncached_input_tokens": 3,
+      "output_tokens": 273,
+      "reasoning_tokens": 63,
+      "total_tokens": 12031
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011755,
+      "cache_write": 0.0,
+      "output": 0.0001365,
+      "total": 0.00025435
+    },
+    "cache_evidence": {
+      "classification": "warm_hit",
+      "cached_tokens": 11755,
+      "cache_write_tokens": 0,
+      "compared_to_response_id": "resp_0939b95ccc029172006ad55a24756c8197b2c73a714661490f",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Maple Leaf Mills",
+      "sku": "CC-WV-003",
+      "sku_source": "document",
+      "unit_price": 24.16,
+      "lead_time_days": 28,
+      "lead_time_basis": "business_days",
+      "min_order": 100,
+      "evidence": [
+        "Maple Leaf Mills",
+        "Campus Customs SKU: CC-WV-003",
+        "Unit price: $24.16",
+        "Minimum order: 100 units",
+        "Lead time: 28 business days"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "fail",
+        "min_order": "pass"
+      },
+      "decision": "do_not_recommend",
+      "reason": "The 28 business-day lead time exceeds the 21-day limit, so the lead-time check fails."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "with_cache",
+    "cache_mode": "handbook",
+    "sequence_in_setup": 6,
+    "request_index_in_run": 0,
+    "document": "p06_qtextile_quote.pdf",
+    "run_id": "73799432413a",
+    "timestamp_utc": "2026-10-18T23:45:46+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_05f243754ca67957006ad55a2b280c8190836c92ee5d07ca74",
+    "usage_raw": {
+      "input_tokens": 11802,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 11799
+      },
+      "output_tokens": 415,
+      "output_tokens_details": {
+        "reasoning_tokens": 192
+      },
+      "total_tokens": 12217
+    },
+    "tokens": {
+      "input_tokens": 11802,
+      "cached_tokens": 11799,
+      "cache_write_tokens": 0,
+      "uncached_input_tokens": 3,
+      "output_tokens": 415,
+      "reasoning_tokens": 192,
+      "total_tokens": 12217
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011799,
+      "cache_write": 0.0,
+      "output": 0.0002075,
+      "total": 0.00032579
+    },
+    "cache_evidence": {
+      "classification": "warm_hit",
+      "cached_tokens": 11799,
+      "cache_write_tokens": 0,
+      "compared_to_response_id": "resp_09d0ea28f8b197f2006ad55a2827e0819496a54086a024c627",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Quinnipiac Textile Deals",
+      "sku": "CC-TE-017",
+      "sku_source": "document",
+      "unit_price": 7.01,
+      "lead_time_days": 6,
+      "lead_time_basis": "business_days",
+      "min_order": 200,
+      "evidence": [
+        "Quinnipiac Textile Deals",
+        "Campus Customs SKU: CC-TE-017",
+        "Item: Alumni Tee",
+        "Unit price: $7.01",
+        "Minimum order: 200 units",
+        "Lead time: 6 business days"
+      ],
+      "checks": {
+        "approved_vendor": "fail",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "do_not_recommend",
+      "reason": "Quinnipiac Textile Deals is listed as removed in 2024, so the approved-vendor check fails."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "with_cache",
+    "cache_mode": "handbook",
+    "sequence_in_setup": 7,
+    "request_index_in_run": 0,
+    "document": "p07_longwharf_quote.pdf",
+    "run_id": "d4f85a8627f9",
+    "timestamp_utc": "2026-10-18T23:45:50+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_06799b2b27bca7a6006ad55a2f1bdc8197bb09c53e21c1ba5b",
+    "usage_raw": {
+      "input_tokens": 11777,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 11774
+      },
+      "output_tokens": 398,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 12175
+    },
+    "tokens": {
+      "input_tokens": 11777,
+      "cached_tokens": 11774,
+      "cache_write_tokens": 0,
+      "uncached_input_tokens": 3,
+      "output_tokens": 398,
+      "reasoning_tokens": 123,
+      "total_tokens": 12175
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011774,
+      "cache_write": 0.0,
+      "output": 0.000199,
+      "total": 0.00031704
+    },
+    "cache_evidence": {
+      "classification": "warm_hit",
+      "cached_tokens": 11774,
+      "cache_write_tokens": 0,
+      "compared_to_response_id": "resp_05f243754ca67957006ad55a2b280c8190836c92ee5d07ca74",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Long Wharf Knitting",
+      "sku": "CC-KN-001",
+      "sku_source": "document",
+      "unit_price": 17.23,
+      "lead_time_days": 7,
+      "lead_time_basis": "business_days",
+      "min_order": 120,
+      "evidence": [
+        "Long Wharf Knitting",
+        "Campus Customs SKU: CC-KN-001",
+        "Unit price: $17.23",
+        "Minimum order: 120 units",
+        "Lead time: 35 business days",
+        "Correction: lead time is now 7 business days thanks to new loom capacity.",
+        "The 35 days shown is our old standard."
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four checks pass: the vendor is approved, the $17.23 unit price is below the $21.40 max for CC-KN-001, the corrected 7-business-day lead time is within 21 days, and the 120-unit minimum order is within 600 units."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "with_cache",
+    "cache_mode": "handbook",
+    "sequence_in_setup": 8,
+    "request_index_in_run": 0,
+    "document": "p08_chapelst_email.eml",
+    "run_id": "0d8ec422be15",
+    "timestamp_utc": "2026-10-18T23:45:54+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_00c5cb72c0c5bd1f006ad55a32e1a48190aecb8481d6c2c13d",
+    "usage_raw": {
+      "input_tokens": 11761,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 11758
+      },
+      "output_tokens": 310,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 12071
+    },
+    "tokens": {
+      "input_tokens": 11761,
+      "cached_tokens": 11758,
+      "cache_write_tokens": 0,
+      "uncached_input_tokens": 3,
+      "output_tokens": 310,
+      "reasoning_tokens": 57,
+      "total_tokens": 12071
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011758,
+      "cache_write": 0.0,
+      "output": 0.000155,
+      "total": 0.00027288
+    },
+    "cache_evidence": {
+      "classification": "warm_hit",
+      "cached_tokens": 11758,
+      "cache_write_tokens": 0,
+      "compared_to_response_id": "resp_06799b2b27bca7a6006ad55a2f1bdc8197bb09c53e21c1ba5b",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Chapel Street Goods",
+      "sku": "CC-PG-010",
+      "sku_source": "document",
+      "unit_price": 4.27,
+      "lead_time_days": 6,
+      "lead_time_basis": "business_days",
+      "min_order": 250,
+      "evidence": [
+        "Quote for Bookmark Set",
+        "Bookmark Set (CC-PG-010).",
+        "Unit price: $4.27",
+        "Minimum order: 250 units",
+        "Lead time: 6 business days",
+        "Chapel Street Goods"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass: Chapel Street Goods is approved, the $4.27 unit price is at or below the $5.34 max for CC-PG-010, the 6-day lead time is within 21 days, and the 250-unit minimum is within 600 units."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "with_cache",
+    "cache_mode": "handbook",
+    "sequence_in_setup": 9,
+    "request_index_in_run": 0,
+    "document": "p09_westville_email.eml",
+    "run_id": "47988fb26c17",
+    "timestamp_utc": "2026-10-18T23:45:57+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0a0d78d707970900006ad55a36471481979b4e9e7ad97e3990",
+    "usage_raw": {
+      "input_tokens": 11895,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 11892
+      },
+      "output_tokens": 588,
+      "output_tokens_details": {
+        "reasoning_tokens": 313
+      },
+      "total_tokens": 12483
+    },
+    "tokens": {
+      "input_tokens": 11895,
+      "cached_tokens": 11892,
+      "cache_write_tokens": 0,
+      "uncached_input_tokens": 3,
+      "output_tokens": 588,
+      "reasoning_tokens": 313,
+      "total_tokens": 12483
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011892,
+      "cache_write": 0.0,
+      "output": 0.000294,
+      "total": 0.00041322
+    },
+    "cache_evidence": {
+      "classification": "warm_hit",
+      "cached_tokens": 11892,
+      "cache_write_tokens": 0,
+      "compared_to_response_id": "resp_00c5cb72c0c5bd1f006ad55a32e1a48190aecb8481d6c2c13d",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Westville Bag Co",
+      "sku": "CC-BG-007",
+      "sku_source": "document",
+      "unit_price": 24.82,
+      "lead_time_days": 12,
+      "lead_time_basis": "business_days",
+      "min_order": 144,
+      "evidence": [
+        "Westville Bag Co can make your bags for the spring rush.",
+        "Item: Lunch Cooler (CC-BG-007)",
+        "Unit price: $24.82",
+        "Minimum order: 144 units",
+        "Correction: lead time for Campus Customs is now 12 business days (priority queue).",
+        "This replaces the 26 days shown."
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four checks pass: Westville Bag Co is approved, the $24.82 unit price is below the $28.22 max for CC-BG-007, 12 business days is within the 21-day limit, and the 144-unit minimum is within the 600-unit limit."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "with_cache",
+    "cache_mode": "handbook",
+    "sequence_in_setup": 10,
+    "request_index_in_run": 0,
+    "document": "p10_eastrock_email.eml",
+    "run_id": "228bf9ed43b4",
+    "timestamp_utc": "2026-10-18T23:46:02+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0568b5cdfc16f49b006ad55a3b26c88197871ca43cd72e5189",
+    "usage_raw": {
+      "input_tokens": 11780,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 11777
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 12025
+    },
+    "tokens": {
+      "input_tokens": 11780,
+      "cached_tokens": 11777,
+      "cache_write_tokens": 0,
+      "uncached_input_tokens": 3,
+      "output_tokens": 245,
+      "reasoning_tokens": 59,
+      "total_tokens": 12025
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011777,
+      "cache_write": 0.0,
+      "output": 0.0001225,
+      "total": 0.00024057
+    },
+    "cache_evidence": {
+      "classification": "warm_hit",
+      "cached_tokens": 11777,
+      "cache_write_tokens": 0,
+      "compared_to_response_id": "resp_0a0d78d707970900006ad55a36471481979b4e9e7ad97e3990",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "East Rock Ceramics",
+      "sku": "CC-MG-003",
+      "sku_source": "document",
+      "unit_price": 4.87,
+      "lead_time_days": 11,
+      "lead_time_basis": "business_days",
+      "min_order": 96,
+      "evidence": [
+        "Item: Travel Mug (CC-MG-003)",
+        "Unit price: $4.87",
+        "Minimum order: 96 units",
+        "Lead time: 11 business days"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "with_cache",
+    "cache_mode": "handbook",
+    "sequence_in_setup": 11,
+    "request_index_in_run": 0,
+    "document": "p11_yorkst_quote.html",
+    "run_id": "12edf255c310",
+    "timestamp_utc": "2026-10-18T23:46:05+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0a89b395e46d8abb006ad55a3e33c08195b268bcadb1550a57",
+    "usage_raw": {
+      "input_tokens": 11750,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 11747
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 12030
+    },
+    "tokens": {
+      "input_tokens": 11750,
+      "cached_tokens": 11747,
+      "cache_write_tokens": 0,
+      "uncached_input_tokens": 3,
+      "output_tokens": 280,
+      "reasoning_tokens": 61,
+      "total_tokens": 12030
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011747,
+      "cache_write": 0.0,
+      "output": 0.00014,
+      "total": 0.00025777
+    },
+    "cache_evidence": {
+      "classification": "warm_hit",
+      "cached_tokens": 11747,
+      "cache_write_tokens": 0,
+      "compared_to_response_id": "resp_0568b5cdfc16f49b006ad55a3b26c88197871ca43cd72e5189",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "York Street Headwear",
+      "sku": "CC-HW-002",
+      "sku_source": "document",
+      "unit_price": 13.62,
+      "lead_time_days": 12,
+      "lead_time_basis": "business_days",
+      "min_order": 180,
+      "evidence": [
+        "York Street Headwear",
+        "Campus Customs SKU | CC-HW-002",
+        "Unit price | $13.62",
+        "Minimum order | 180 units",
+        "Lead time | 12 business days"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "fail",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "do_not_recommend",
+      "reason": "The $13.62 unit price is above the $11.52 max unit cost for CC-HW-002, so the price check fails."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "batch_id": "031e193f",
+    "setup": "with_cache",
+    "cache_mode": "handbook",
+    "sequence_in_setup": 12,
+    "request_index_in_run": 0,
+    "document": "p12_bluehen_quote.pdf",
+    "run_id": "1c78096e9621",
+    "timestamp_utc": "2026-10-18T23:46:09+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_02d78e3a4360757e006ad55a427ac08193aa2ac6d2ce7f7aa8",
+    "usage_raw": {
+      "input_tokens": 11778,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 11775
+      },
+      "output_tokens": 329,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 12107
+    },
+    "tokens": {
+      "input_tokens": 11778,
+      "cached_tokens": 11775,
+      "cache_write_tokens": 0,
+      "uncached_input_tokens": 3,
+      "output_tokens": 329,
+      "reasoning_tokens": 107,
+      "total_tokens": 12107
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011775,
+      "cache_write": 0.0,
+      "output": 0.0001645,
+      "total": 0.00028255
+    },
+    "cache_evidence": {
+      "classification": "warm_hit",
+      "cached_tokens": 11775,
+      "cache_write_tokens": 0,
+      "compared_to_response_id": "resp_0a89b395e46d8abb006ad55a3e33c08195b268bcadb1550a57",
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-CR-010",
+      "sku_source": "document",
+      "unit_price": 17.44,
+      "lead_time_days": 13,
+      "lead_time_basis": "business_days",
+      "min_order": 200,
+      "evidence": [
+        "Blue Hen Apparel",
+        "Campus Customs SKU: CC-CR-010",
+        "Item: Cream Varsity Crewneck",
+        "Minimum order: 200 units",
+        "Lead time: 13 business days",
+        "the unit price is now $17.44 under volume agreement BHA-CC-2026.",
+        "This replaces the unit price shown above."
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass."
+    },
+    "error": null,
+    "agent_code_version": "f35be40e980e398b",
+    "attempt": 1,
+    "excluded_from_results": true,
+    "exclusion_reason": "attempt 1 relied on prompt_cache_options, which our route ignores; without_cache calls show cache activity and with_cache calls reused prompts the without_cache pass had just written"
+  },
+  {
+    "setup": "diagnostic_probe",
+    "probe": "probe 1.1",
+    "request": "prompt_cache_options {mode: explicit}, no breakpoint, fresh prefix",
+    "source": "transcribed from the console output of a raw responses.create probe (OpenAI SDK through Portkey, model gpt-6-luna, reasoning effort none, max_output_tokens 16); response id, timestamp and output tokens were not captured",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "usage_raw": {
+      "input_tokens": 10971,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 10968
+      }
+    },
+    "echoed_prompt_cache_options": null,
+    "prompt_cache_diagnostics": null,
+    "prompt": "prompt = unique Probe line + system prompt + a 1-line document",
+    "replay_assessment": "likely a real call (first request with this body)"
+  },
+  {
+    "setup": "diagnostic_probe",
+    "probe": "probe 1.2",
+    "request": "same prompt, prompt_cache_options {mode: explicit, comparison_response_id: probe 1.1}",
+    "source": "transcribed from the console output of a raw responses.create probe (OpenAI SDK through Portkey, model gpt-6-luna, reasoning effort none, max_output_tokens 16); response id, timestamp and output tokens were not captured",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "usage_raw": {
+      "input_tokens": 10971,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 10968
+      }
+    },
+    "echoed_prompt_cache_options": null,
+    "prompt_cache_diagnostics": null,
+    "prompt": "same prompt as 1.1",
+    "replay_assessment": "likely a Portkey response-cache replay of 1.1: the only difference was inside prompt_cache_options, which Portkey ignores (see the p01/p08 replays in usage_log.json), and its usage is identical to 1.1"
+  },
+  {
+    "setup": "diagnostic_probe",
+    "probe": "probe 2",
+    "request": "tiny prompt (Reply with OK.), under the 1,024-token cache minimum, to read routing metadata: provider azure-openai, x-ms-region East US 2, x-ms-served-model gpt-6-luna-2026-09-22",
+    "source": "transcribed from the console output of a raw responses.create probe (OpenAI SDK through Portkey, model gpt-6-luna, reasoning effort none, max_output_tokens 16); response id, timestamp and output tokens were not captured",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "usage_raw": null,
+    "echoed_prompt_cache_options": null,
+    "prompt_cache_diagnostics": null,
+    "prompt": "tiny prompt \"Reply with OK.\" under the 1,024-token cache minimum; its usage was not printed",
+    "replay_assessment": "real call; the routing metadata it showed is re-captured with full headers in the response-cache probes A-C"
+  },
+  {
+    "setup": "diagnostic_probe",
+    "probe": "probe 3.1",
+    "request": "prompt_cache_key A, fresh prefix",
+    "source": "transcribed from the console output of a raw responses.create probe (OpenAI SDK through Portkey, model gpt-6-luna, reasoning effort none, max_output_tokens 16); response id, timestamp and output tokens were not captured",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "usage_raw": {
+      "input_tokens": 10955,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 10952
+      }
+    },
+    "echoed_prompt_cache_options": null,
+    "prompt_cache_diagnostics": null,
+    "prompt": "prompt = unique Probe line + system prompt + a 1-line document",
+    "replay_assessment": "likely a real call (first request with this body)"
+  },
+  {
+    "setup": "diagnostic_probe",
+    "probe": "probe 3.2",
+    "request": "prompt_cache_key A, identical prompt 15 s later",
+    "source": "transcribed from the console output of a raw responses.create probe (OpenAI SDK through Portkey, model gpt-6-luna, reasoning effort none, max_output_tokens 16); response id, timestamp and output tokens were not captured",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "usage_raw": {
+      "input_tokens": 10955,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 10952
+      }
+    },
+    "echoed_prompt_cache_options": null,
+    "prompt_cache_diagnostics": null,
+    "prompt": "identical request to 3.1",
+    "replay_assessment": "Portkey response-cache replay of 3.1 (identical request; probe B proves identical requests are replayed)"
+  },
+  {
+    "setup": "diagnostic_probe",
+    "probe": "probe 3.3",
+    "request": "prompt_cache_key B, identical prompt",
+    "source": "transcribed from the console output of a raw responses.create probe (OpenAI SDK through Portkey, model gpt-6-luna, reasoning effort none, max_output_tokens 16); response id, timestamp and output tokens were not captured",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "usage_raw": {
+      "input_tokens": 10955,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 10952
+      }
+    },
+    "echoed_prompt_cache_options": null,
+    "prompt_cache_diagnostics": null,
+    "prompt": "same prompt as 3.1 with a different prompt_cache_key",
+    "replay_assessment": "real call (body differs): wrote everything and read nothing, 20 s after 3.1 wrote the same prompt under key A"
+  },
+  {
+    "setup": "diagnostic_probe",
+    "probe": "probe 3.4",
+    "request": "prompt_cache_key A, header x-portkey-strict-open-ai-compliance false, prompt_cache_options {mode: explicit, comparison_response_id: probe 3.2}",
+    "source": "transcribed from the console output of a raw responses.create probe (OpenAI SDK through Portkey, model gpt-6-luna, reasoning effort none, max_output_tokens 16); response id, timestamp and output tokens were not captured",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "usage_raw": {
+      "input_tokens": 10955,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 10952
+      }
+    },
+    "echoed_prompt_cache_options": null,
+    "prompt_cache_diagnostics": null,
+    "prompt": "same prompt as 3.1 plus a header and prompt_cache_options",
+    "replay_assessment": "likely a Portkey response-cache replay of 3.1 (same body apart from prompt_cache_options; identical usage)"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "with_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-shared",
+    "sequence_in_setup": 1,
+    "request_index_in_run": 0,
+    "document": "p01_bluehen_quote.html",
+    "run_id": "5b561e142990",
+    "timestamp_utc": "2026-10-18T23:52:59+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0f1f918dbd816830006ad55bdcf76c81939e2904a70a5ed267",
+    "usage_raw": {
+      "input_tokens": 11786,
+      "input_tokens_details": {
+        "cache_write_tokens": 11783,
+        "cached_tokens": 0
+      },
+      "output_tokens": 329,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 12115
+    },
+    "tokens": {
+      "input_tokens": 11786,
+      "cached_tokens": 0,
+      "cache_write_tokens": 11783,
+      "uncached_input_tokens": 3,
+      "output_tokens": 329,
+      "reasoning_tokens": 80,
+      "total_tokens": 12115
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.0,
+      "cache_write": 0.001472875,
+      "output": 0.0001645,
+      "total": 0.001637675
+    },
+    "cache_evidence": {
+      "classification": "cold_write",
+      "cached_tokens": 0,
+      "cache_write_tokens": 11783,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-HD-006",
+      "sku_source": "document",
+      "unit_price": 21.8,
+      "lead_time_days": 14,
+      "lead_time_basis": "business_days",
+      "min_order": 240,
+      "evidence": [
+        "Blue Hen Apparel",
+        "Campus Customs SKU | CC-HD-006",
+        "Item | Heavyweight Reverse Weave Hoodie",
+        "Unit price | $21.80",
+        "Minimum order | 240 units",
+        "Lead time | 14 business days"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four checks pass: Blue Hen Apparel is approved, the $21.80 unit price is below the $25.44 max for CC-HD-006, the 14-day lead time is within 21 days, and the 240-unit minimum is within 600 units."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "with_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-shared",
+    "sequence_in_setup": 2,
+    "request_index_in_run": 0,
+    "document": "p02_elmcity_quote.html",
+    "run_id": "7d5fe4d82174",
+    "timestamp_utc": "2026-10-18T23:53:03+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0a151b1ec0d79123006ad55be09ee88197a2fbe907a066e09d",
+    "usage_raw": {
+      "input_tokens": 11786,
+      "input_tokens_details": {
+        "cache_write_tokens": 11783,
+        "cached_tokens": 0
+      },
+      "output_tokens": 384,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 12170
+    },
+    "tokens": {
+      "input_tokens": 11786,
+      "cached_tokens": 0,
+      "cache_write_tokens": 11783,
+      "uncached_input_tokens": 3,
+      "output_tokens": 384,
+      "reasoning_tokens": 107,
+      "total_tokens": 12170
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.0,
+      "cache_write": 0.001472875,
+      "output": 0.000192,
+      "total": 0.001665175
+    },
+    "cache_evidence": {
+      "classification": "cold_write",
+      "cached_tokens": 0,
+      "cache_write_tokens": 11783,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Elm City Screenprint",
+      "sku": "CC-TE-004",
+      "sku_source": "document",
+      "unit_price": 5.11,
+      "lead_time_days": 9,
+      "lead_time_basis": "business_days",
+      "min_order": 300,
+      "evidence": [
+        "Elm City Screenprint",
+        "Campus Customs SKU | CC-TE-004",
+        "Unit price | $9.83",
+        "Minimum order | 300 units",
+        "Lead time | 9 business days",
+        "Revised pricing effective October 1: the unit price for this item is now $5.11. This replaces the price in the table above."
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass: the vendor is approved, the $5.11 unit price is at or below the $8.51 max for CC-TE-004, the 9-day lead time is within 21 days, and the 300-unit minimum is within 600 units."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "with_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-shared",
+    "sequence_in_setup": 3,
+    "request_index_in_run": 0,
+    "document": "p03_ivyprint_catalog.html",
+    "run_id": "fc4cdabed3cb",
+    "timestamp_utc": "2026-10-18T23:53:07+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_096b42a0dd176568006ad55be454948196b9589414b7871b72",
+    "usage_raw": {
+      "input_tokens": 11783,
+      "input_tokens_details": {
+        "cache_write_tokens": 131,
+        "cached_tokens": 11649
+      },
+      "output_tokens": 386,
+      "output_tokens_details": {
+        "reasoning_tokens": 166
+      },
+      "total_tokens": 12169
+    },
+    "tokens": {
+      "input_tokens": 11783,
+      "cached_tokens": 11649,
+      "cache_write_tokens": 131,
+      "uncached_input_tokens": 3,
+      "output_tokens": 386,
+      "reasoning_tokens": 166,
+      "total_tokens": 12169
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011649,
+      "cache_write": 1.6375e-05,
+      "output": 0.000193,
+      "total": 0.000326165
+    },
+    "cache_evidence": {
+      "classification": "warm_hit_plus_write",
+      "cached_tokens": 11649,
+      "cache_write_tokens": 131,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Chapel Street Goods",
+      "sku": "CC-PG-006",
+      "sku_source": "document",
+      "unit_price": 5.83,
+      "lead_time_days": 10,
+      "lead_time_basis": "business_days",
+      "min_order": 150,
+      "evidence": [
+        "Campus Customs SKU | CC-PG-006",
+        "Item | Spiral Planner",
+        "Unit price | $5.83",
+        "Minimum order | 150 units",
+        "Lead time | 10 business days",
+        "Vendor of record: Chapel Street Goods (Campus Customs vendor code CSG). Ivy Print Co is the print studio brand name only."
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "with_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-shared",
+    "sequence_in_setup": 4,
+    "request_index_in_run": 0,
+    "document": "p04_harborstitch_quote.html",
+    "run_id": "cf30529cf0ec",
+    "timestamp_utc": "2026-10-18T23:53:11+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0846298ed04d8b57006ad55be7f36481968686c53737abdaae",
+    "usage_raw": {
+      "input_tokens": 11810,
+      "input_tokens_details": {
+        "cache_write_tokens": 158,
+        "cached_tokens": 11649
+      },
+      "output_tokens": 369,
+      "output_tokens_details": {
+        "reasoning_tokens": 108
+      },
+      "total_tokens": 12179
+    },
+    "tokens": {
+      "input_tokens": 11810,
+      "cached_tokens": 11649,
+      "cache_write_tokens": 158,
+      "uncached_input_tokens": 3,
+      "output_tokens": 369,
+      "reasoning_tokens": 108,
+      "total_tokens": 12179
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011649,
+      "cache_write": 1.975e-05,
+      "output": 0.0001845,
+      "total": 0.00032104
+    },
+    "cache_evidence": {
+      "classification": "warm_hit_plus_write",
+      "cached_tokens": 11649,
+      "cache_write_tokens": 158,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Harbor Stitch Embroidery",
+      "sku": "CC-HT-001",
+      "sku_source": "document",
+      "unit_price": 8.68,
+      "lead_time_days": 16,
+      "lead_time_basis": "business_days",
+      "min_order": 120,
+      "evidence": [
+        "Harbor Stitch Embroidery",
+        "Campus Customs SKU | CC-HT-001",
+        "Item | Classic Y Dad Cap",
+        "Unit price | $8.68",
+        "Minimum order | 120 units",
+        "Lead time | 16 business days"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass: Harbor Stitch Embroidery is approved, the $8.68 unit price is at or below the $9.78 max unit cost for CC-HT-001, the 16-day lead time is within 21 days, and the 120-unit minimum order is within 600 units."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "with_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-shared",
+    "sequence_in_setup": 5,
+    "request_index_in_run": 0,
+    "document": "p05_maplemills_quote.pdf",
+    "run_id": "d3b3fae31a1b",
+    "timestamp_utc": "2026-10-18T23:53:15+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0cef6dc44682ccf3006ad55beba8ac81938845eef0bd8da47f",
+    "usage_raw": {
+      "input_tokens": 11774,
+      "input_tokens_details": {
+        "cache_write_tokens": 122,
+        "cached_tokens": 11649
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "total_tokens": 12062
+    },
+    "tokens": {
+      "input_tokens": 11774,
+      "cached_tokens": 11649,
+      "cache_write_tokens": 122,
+      "uncached_input_tokens": 3,
+      "output_tokens": 288,
+      "reasoning_tokens": 70,
+      "total_tokens": 12062
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011649,
+      "cache_write": 1.525e-05,
+      "output": 0.000144,
+      "total": 0.00027604
+    },
+    "cache_evidence": {
+      "classification": "warm_hit_plus_write",
+      "cached_tokens": 11649,
+      "cache_write_tokens": 122,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Maple Leaf Mills",
+      "sku": "CC-WV-003",
+      "sku_source": "document",
+      "unit_price": 24.16,
+      "lead_time_days": 28,
+      "lead_time_basis": "business_days",
+      "min_order": 100,
+      "evidence": [
+        "Maple Leaf Mills",
+        "Campus Customs SKU: CC-WV-003",
+        "Item: Plaid Scarf",
+        "Unit price: $24.16",
+        "Minimum order: 100 units",
+        "Lead time: 28 business days"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "fail",
+        "min_order": "pass"
+      },
+      "decision": "do_not_recommend",
+      "reason": "The 28-day lead time exceeds the 21-day limit, so the lead-time check fails."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "with_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-shared",
+    "sequence_in_setup": 6,
+    "request_index_in_run": 0,
+    "document": "p06_qtextile_quote.pdf",
+    "run_id": "6ce5c0d3d9a3",
+    "timestamp_utc": "2026-10-18T23:53:18+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0588f521ae30745a006ad55bee9aac819699a26730a243728d",
+    "usage_raw": {
+      "input_tokens": 11818,
+      "input_tokens_details": {
+        "cache_write_tokens": 166,
+        "cached_tokens": 11649
+      },
+      "output_tokens": 318,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 12136
+    },
+    "tokens": {
+      "input_tokens": 11818,
+      "cached_tokens": 11649,
+      "cache_write_tokens": 166,
+      "uncached_input_tokens": 3,
+      "output_tokens": 318,
+      "reasoning_tokens": 81,
+      "total_tokens": 12136
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011649,
+      "cache_write": 2.075e-05,
+      "output": 0.000159,
+      "total": 0.00029654
+    },
+    "cache_evidence": {
+      "classification": "warm_hit_plus_write",
+      "cached_tokens": 11649,
+      "cache_write_tokens": 166,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Quinnipiac Textile Deals",
+      "sku": "CC-TE-017",
+      "sku_source": "document",
+      "unit_price": 7.01,
+      "lead_time_days": 6,
+      "lead_time_basis": "business_days",
+      "min_order": 200,
+      "evidence": [
+        "Quinnipiac Textile Deals",
+        "Campus Customs SKU: CC-TE-017",
+        "Unit price: $7.01",
+        "Minimum order: 200 units",
+        "Lead time: 6 business days"
+      ],
+      "checks": {
+        "approved_vendor": "fail",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "do_not_recommend",
+      "reason": "The approved-vendor check fails because Quinnipiac Textile Deals is on the removed vendor list, despite the $7.01 unit price being below the $8.37 max unit cost for CC-TE-017."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "with_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-shared",
+    "sequence_in_setup": 7,
+    "request_index_in_run": 0,
+    "document": "p07_longwharf_quote.pdf",
+    "run_id": "6863682e6e28",
+    "timestamp_utc": "2026-10-18T23:53:21+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0e5bd5073d5505c0006ad55bf216208196ae324af418eca131",
+    "usage_raw": {
+      "input_tokens": 11793,
+      "input_tokens_details": {
+        "cache_write_tokens": 141,
+        "cached_tokens": 11649
+      },
+      "output_tokens": 363,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 12156
+    },
+    "tokens": {
+      "input_tokens": 11793,
+      "cached_tokens": 11649,
+      "cache_write_tokens": 141,
+      "uncached_input_tokens": 3,
+      "output_tokens": 363,
+      "reasoning_tokens": 84,
+      "total_tokens": 12156
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011649,
+      "cache_write": 1.7625e-05,
+      "output": 0.0001815,
+      "total": 0.000315915
+    },
+    "cache_evidence": {
+      "classification": "warm_hit_plus_write",
+      "cached_tokens": 11649,
+      "cache_write_tokens": 141,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Long Wharf Knitting",
+      "sku": "CC-KN-001",
+      "sku_source": "document",
+      "unit_price": 17.23,
+      "lead_time_days": 7,
+      "lead_time_basis": "business_days",
+      "min_order": 120,
+      "evidence": [
+        "Long Wharf Knitting",
+        "Campus Customs SKU: CC-KN-001",
+        "Unit price: $17.23",
+        "Minimum order: 120 units",
+        "Lead time: 35 business days",
+        "Correction: lead time is now 7 business days thanks to new loom capacity.",
+        "The 35 days shown is our old standard."
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass: Long Wharf Knitting is approved, $17.23 is at or below the $21.40 max unit cost for CC-KN-001, the corrected 7-business-day lead time is within 21 days, and the 120-unit minimum order is within 600 units."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "with_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-shared",
+    "sequence_in_setup": 8,
+    "request_index_in_run": 0,
+    "document": "p08_chapelst_email.eml",
+    "run_id": "119b61d7ecf9",
+    "timestamp_utc": "2026-10-18T23:53:25+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0393edf5d89420b2006ad55bf641f88195b443b18cd002ccb0",
+    "usage_raw": {
+      "input_tokens": 11777,
+      "input_tokens_details": {
+        "cache_write_tokens": 125,
+        "cached_tokens": 11649
+      },
+      "output_tokens": 304,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 12081
+    },
+    "tokens": {
+      "input_tokens": 11777,
+      "cached_tokens": 11649,
+      "cache_write_tokens": 125,
+      "uncached_input_tokens": 3,
+      "output_tokens": 304,
+      "reasoning_tokens": 50,
+      "total_tokens": 12081
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011649,
+      "cache_write": 1.5625e-05,
+      "output": 0.000152,
+      "total": 0.000284415
+    },
+    "cache_evidence": {
+      "classification": "warm_hit_plus_write",
+      "cached_tokens": 11649,
+      "cache_write_tokens": 125,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Chapel Street Goods",
+      "sku": "CC-PG-010",
+      "sku_source": "document",
+      "unit_price": 4.27,
+      "lead_time_days": 6,
+      "lead_time_basis": "business_days",
+      "min_order": 250,
+      "evidence": [
+        "Happy to quote Bookmark Set (CC-PG-010).",
+        "Unit price: $4.27",
+        "Minimum order: 250 units",
+        "Lead time: 6 business days",
+        "Chapel Street Goods"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass: Chapel Street Goods is approved, the $4.27 unit price is at or below the $5.34 max unit cost for CC-PG-010, the 6-day lead time is within 21 days, and the 250-unit minimum order is at or below 600 units."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "with_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-shared",
+    "sequence_in_setup": 9,
+    "request_index_in_run": 0,
+    "document": "p09_westville_email.eml",
+    "run_id": "b7f984d0839a",
+    "timestamp_utc": "2026-10-18T23:53:29+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0cfdd882d0a680ea006ad55bfa42448196b7c1f0ebd83c1490",
+    "usage_raw": {
+      "input_tokens": 11911,
+      "input_tokens_details": {
+        "cache_write_tokens": 259,
+        "cached_tokens": 11649
+      },
+      "output_tokens": 453,
+      "output_tokens_details": {
+        "reasoning_tokens": 227
+      },
+      "total_tokens": 12364
+    },
+    "tokens": {
+      "input_tokens": 11911,
+      "cached_tokens": 11649,
+      "cache_write_tokens": 259,
+      "uncached_input_tokens": 3,
+      "output_tokens": 453,
+      "reasoning_tokens": 227,
+      "total_tokens": 12364
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011649,
+      "cache_write": 3.2375e-05,
+      "output": 0.0002265,
+      "total": 0.000375665
+    },
+    "cache_evidence": {
+      "classification": "warm_hit_plus_write",
+      "cached_tokens": 11649,
+      "cache_write_tokens": 259,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Westville Bag Co",
+      "sku": "CC-BG-007",
+      "sku_source": "document",
+      "unit_price": 24.82,
+      "lead_time_days": 12,
+      "lead_time_basis": "business_days",
+      "min_order": 144,
+      "evidence": [
+        "Westville Bag Co can make your bags for the spring rush.",
+        "Item: Lunch Cooler (CC-BG-007)",
+        "Unit price: $24.82",
+        "Minimum order: 144 units",
+        "Lead time: 26 business days",
+        "lead time for Campus Customs is now 12 business days (priority queue). This replaces the 26 days shown."
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "with_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-shared",
+    "sequence_in_setup": 10,
+    "request_index_in_run": 0,
+    "document": "p10_eastrock_email.eml",
+    "run_id": "fe790d546c1d",
+    "timestamp_utc": "2026-10-18T23:53:34+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0a395e3edb2c9c42006ad55bff006481948084721a01a0f193",
+    "usage_raw": {
+      "input_tokens": 11796,
+      "input_tokens_details": {
+        "cache_write_tokens": 144,
+        "cached_tokens": 11649
+      },
+      "output_tokens": 260,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 12056
+    },
+    "tokens": {
+      "input_tokens": 11796,
+      "cached_tokens": 11649,
+      "cache_write_tokens": 144,
+      "uncached_input_tokens": 3,
+      "output_tokens": 260,
+      "reasoning_tokens": 67,
+      "total_tokens": 12056
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011649,
+      "cache_write": 1.8e-05,
+      "output": 0.00013,
+      "total": 0.00026479
+    },
+    "cache_evidence": {
+      "classification": "warm_hit_plus_write",
+      "cached_tokens": 11649,
+      "cache_write_tokens": 144,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "East Rock Ceramics",
+      "sku": "CC-MG-003",
+      "sku_source": "document",
+      "unit_price": 4.87,
+      "lead_time_days": 11,
+      "lead_time_basis": "business_days",
+      "min_order": 96,
+      "evidence": [
+        "Item: Travel Mug (CC-MG-003)",
+        "Unit price: $4.87",
+        "Minimum order: 96 units",
+        "Lead time: 11 business days",
+        "East Rock Ceramics"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "with_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-shared",
+    "sequence_in_setup": 11,
+    "request_index_in_run": 0,
+    "document": "p11_yorkst_quote.html",
+    "run_id": "86af8a972297",
+    "timestamp_utc": "2026-10-18T23:53:37+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0357cc7c9637ca24006ad55c01cf048190818f8ca56741dd0e",
+    "usage_raw": {
+      "input_tokens": 11766,
+      "input_tokens_details": {
+        "cache_write_tokens": 114,
+        "cached_tokens": 11649
+      },
+      "output_tokens": 281,
+      "output_tokens_details": {
+        "reasoning_tokens": 53
+      },
+      "total_tokens": 12047
+    },
+    "tokens": {
+      "input_tokens": 11766,
+      "cached_tokens": 11649,
+      "cache_write_tokens": 114,
+      "uncached_input_tokens": 3,
+      "output_tokens": 281,
+      "reasoning_tokens": 53,
+      "total_tokens": 12047
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.00011649,
+      "cache_write": 1.425e-05,
+      "output": 0.0001405,
+      "total": 0.00027154
+    },
+    "cache_evidence": {
+      "classification": "warm_hit_plus_write",
+      "cached_tokens": 11649,
+      "cache_write_tokens": 114,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "York Street Headwear",
+      "sku": "CC-HW-002",
+      "sku_source": "document",
+      "unit_price": 13.62,
+      "lead_time_days": 12,
+      "lead_time_basis": "business_days",
+      "min_order": 180,
+      "evidence": [
+        "York Street Headwear",
+        "Campus Customs SKU | CC-HW-002",
+        "Item | Cuffed Beanie",
+        "Unit price | $13.62",
+        "Minimum order | 180 units",
+        "Lead time | 12 business days"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "fail",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "do_not_recommend",
+      "reason": "The $13.62 unit price is above the $11.52 max unit cost for CC-HW-002, so the price check fails."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "with_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-shared",
+    "sequence_in_setup": 12,
+    "request_index_in_run": 0,
+    "document": "p12_bluehen_quote.pdf",
+    "run_id": "349c711433c5",
+    "timestamp_utc": "2026-10-18T23:53:40+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0fe59cfe8dc8f248006ad55c0648148194927ca5e76c10345d",
+    "usage_raw": {
+      "input_tokens": 11794,
+      "input_tokens_details": {
+        "cache_write_tokens": 11791,
+        "cached_tokens": 0
+      },
+      "output_tokens": 377,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 12171
+    },
+    "tokens": {
+      "input_tokens": 11794,
+      "cached_tokens": 0,
+      "cache_write_tokens": 11791,
+      "uncached_input_tokens": 3,
+      "output_tokens": 377,
+      "reasoning_tokens": 93,
+      "total_tokens": 12171
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.0,
+      "cache_write": 0.001473875,
+      "output": 0.0001885,
+      "total": 0.001662675
+    },
+    "cache_evidence": {
+      "classification": "cold_write",
+      "cached_tokens": 0,
+      "cache_write_tokens": 11791,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-CR-010",
+      "sku_source": "document",
+      "unit_price": 17.44,
+      "lead_time_days": 13,
+      "lead_time_basis": "business_days",
+      "min_order": 200,
+      "evidence": [
+        "Blue Hen Apparel",
+        "Campus Customs SKU: CC-CR-010",
+        "Unit price: $27.72",
+        "Minimum order: 200 units",
+        "Lead time: 13 business days",
+        "Revised quote effective October 1: the unit price is now $17.44 under volume agreement BHA-CC-2026.",
+        "This replaces the unit price shown above."
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass: Blue Hen Apparel is approved, the $17.44 unit price is at or below the $23.25 max for CC-CR-010, the 13-day lead time is within 21 days, and the 200-unit minimum is within 600 units."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "without_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-01-2b703f5e",
+    "sequence_in_setup": 1,
+    "request_index_in_run": 0,
+    "document": "p01_bluehen_quote.html",
+    "run_id": "7790d1049fd4",
+    "timestamp_utc": "2026-10-18T23:53:45+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0e2d5d0f9bf7d68b006ad55c09db7881958e8a9080ef142b99",
+    "usage_raw": {
+      "input_tokens": 11793,
+      "input_tokens_details": {
+        "cache_write_tokens": 11790,
+        "cached_tokens": 0
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 49
+      },
+      "total_tokens": 12030
+    },
+    "tokens": {
+      "input_tokens": 11793,
+      "cached_tokens": 0,
+      "cache_write_tokens": 11790,
+      "uncached_input_tokens": 3,
+      "output_tokens": 237,
+      "reasoning_tokens": 49,
+      "total_tokens": 12030
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.0,
+      "cache_write": 0.00147375,
+      "output": 0.0001185,
+      "total": 0.00159255
+    },
+    "cache_evidence": {
+      "classification": "no_reuse",
+      "cached_tokens": 0,
+      "cache_write_tokens": 11790,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-HD-006",
+      "sku_source": "document",
+      "unit_price": 21.8,
+      "lead_time_days": 14,
+      "lead_time_basis": "business_days",
+      "min_order": 240,
+      "evidence": [
+        "Blue Hen Apparel",
+        "Campus Customs SKU | CC-HD-006",
+        "Unit price | $21.80",
+        "Minimum order | 240 units",
+        "Lead time | 14 business days"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "without_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-02-08c0e1e8",
+    "sequence_in_setup": 2,
+    "request_index_in_run": 0,
+    "document": "p02_elmcity_quote.html",
+    "run_id": "2120839c6aa8",
+    "timestamp_utc": "2026-10-18T23:53:48+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_04caaaad89c9c480006ad55c0d96d08197915064fe0444d3c7",
+    "usage_raw": {
+      "input_tokens": 11794,
+      "input_tokens_details": {
+        "cache_write_tokens": 11791,
+        "cached_tokens": 0
+      },
+      "output_tokens": 372,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 12166
+    },
+    "tokens": {
+      "input_tokens": 11794,
+      "cached_tokens": 0,
+      "cache_write_tokens": 11791,
+      "uncached_input_tokens": 3,
+      "output_tokens": 372,
+      "reasoning_tokens": 94,
+      "total_tokens": 12166
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.0,
+      "cache_write": 0.001473875,
+      "output": 0.000186,
+      "total": 0.001660175
+    },
+    "cache_evidence": {
+      "classification": "no_reuse",
+      "cached_tokens": 0,
+      "cache_write_tokens": 11791,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Elm City Screenprint",
+      "sku": "CC-TE-004",
+      "sku_source": "document",
+      "unit_price": 5.11,
+      "lead_time_days": 9,
+      "lead_time_basis": "business_days",
+      "min_order": 300,
+      "evidence": [
+        "Elm City Screenprint",
+        "Campus Customs SKU | CC-TE-004",
+        "Unit price | $9.83",
+        "Minimum order | 300 units",
+        "Lead time | 9 business days",
+        "Revised pricing effective October 1: the unit price for this item is now $5.11. This replaces the price in the table above."
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass: Elm City Screenprint is approved, the $5.11 unit price is at or below the $8.51 max for CC-TE-004, the 9-day lead time is within 21 days, and the 300-unit minimum is within 600."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "without_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-03-00cf78b0",
+    "sequence_in_setup": 3,
+    "request_index_in_run": 0,
+    "document": "p03_ivyprint_catalog.html",
+    "run_id": "5737ed4fc1e7",
+    "timestamp_utc": "2026-10-18T23:53:52+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_074f509aab677395006ad55c114e208190a0d61fba6ba2eb6e",
+    "usage_raw": {
+      "input_tokens": 11789,
+      "input_tokens_details": {
+        "cache_write_tokens": 11786,
+        "cached_tokens": 0
+      },
+      "output_tokens": 323,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 12112
+    },
+    "tokens": {
+      "input_tokens": 11789,
+      "cached_tokens": 0,
+      "cache_write_tokens": 11786,
+      "uncached_input_tokens": 3,
+      "output_tokens": 323,
+      "reasoning_tokens": 99,
+      "total_tokens": 12112
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.0,
+      "cache_write": 0.00147325,
+      "output": 0.0001615,
+      "total": 0.00163505
+    },
+    "cache_evidence": {
+      "classification": "no_reuse",
+      "cached_tokens": 0,
+      "cache_write_tokens": 11786,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Chapel Street Goods",
+      "sku": "CC-PG-006",
+      "sku_source": "document",
+      "unit_price": 5.83,
+      "lead_time_days": 10,
+      "lead_time_basis": "business_days",
+      "min_order": 150,
+      "evidence": [
+        "Campus Customs SKU | CC-PG-006",
+        "Item | Spiral Planner",
+        "Unit price | $5.83",
+        "Minimum order | 150 units",
+        "Lead time | 10 business days",
+        "Vendor of record: Chapel Street Goods (Campus Customs vendor code CSG).",
+        "Ivy Print Co is the print studio brand name only."
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "without_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-04-f49c98da",
+    "sequence_in_setup": 4,
+    "request_index_in_run": 0,
+    "document": "p04_harborstitch_quote.html",
+    "run_id": "c7a42b0a1805",
+    "timestamp_utc": "2026-10-18T23:53:56+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0713ff07e9d0ffa0006ad55c14bf1481968a0d22181dc42ffb",
+    "usage_raw": {
+      "input_tokens": 11815,
+      "input_tokens_details": {
+        "cache_write_tokens": 11812,
+        "cached_tokens": 0
+      },
+      "output_tokens": 335,
+      "output_tokens_details": {
+        "reasoning_tokens": 88
+      },
+      "total_tokens": 12150
+    },
+    "tokens": {
+      "input_tokens": 11815,
+      "cached_tokens": 0,
+      "cache_write_tokens": 11812,
+      "uncached_input_tokens": 3,
+      "output_tokens": 335,
+      "reasoning_tokens": 88,
+      "total_tokens": 12150
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.0,
+      "cache_write": 0.0014765,
+      "output": 0.0001675,
+      "total": 0.0016443
+    },
+    "cache_evidence": {
+      "classification": "no_reuse",
+      "cached_tokens": 0,
+      "cache_write_tokens": 11812,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Harbor Stitch Embroidery",
+      "sku": "CC-HT-001",
+      "sku_source": "document",
+      "unit_price": 8.68,
+      "lead_time_days": 16,
+      "lead_time_basis": "business_days",
+      "min_order": 120,
+      "evidence": [
+        "Harbor Stitch Embroidery",
+        "Campus Customs SKU | CC-HT-001",
+        "Unit price | $8.68",
+        "Minimum order | 120 units",
+        "Lead time | 16 business days"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass: Harbor Stitch Embroidery is approved, the $8.68 unit price is within the $9.78 max for CC-HT-001, the 16-day lead time is within 21 days, and the 120-unit minimum is within 600 units."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "without_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-05-8691b55c",
+    "sequence_in_setup": 5,
+    "request_index_in_run": 0,
+    "document": "p05_maplemills_quote.pdf",
+    "run_id": "64e6602eeb80",
+    "timestamp_utc": "2026-10-18T23:53:59+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_031658b1db171beb006ad55c181a308194a9295dc3b3297ac9",
+    "usage_raw": {
+      "input_tokens": 11780,
+      "input_tokens_details": {
+        "cache_write_tokens": 11777,
+        "cached_tokens": 0
+      },
+      "output_tokens": 281,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 12061
+    },
+    "tokens": {
+      "input_tokens": 11780,
+      "cached_tokens": 0,
+      "cache_write_tokens": 11777,
+      "uncached_input_tokens": 3,
+      "output_tokens": 281,
+      "reasoning_tokens": 63,
+      "total_tokens": 12061
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.0,
+      "cache_write": 0.001472125,
+      "output": 0.0001405,
+      "total": 0.001612925
+    },
+    "cache_evidence": {
+      "classification": "no_reuse",
+      "cached_tokens": 0,
+      "cache_write_tokens": 11777,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Maple Leaf Mills",
+      "sku": "CC-WV-003",
+      "sku_source": "document",
+      "unit_price": 24.16,
+      "lead_time_days": 28,
+      "lead_time_basis": "business_days",
+      "min_order": 100,
+      "evidence": [
+        "Maple Leaf Mills",
+        "Campus Customs SKU: CC-WV-003",
+        "Item: Plaid Scarf",
+        "Unit price: $24.16",
+        "Minimum order: 100 units",
+        "Lead time: 28 business days"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "fail",
+        "min_order": "pass"
+      },
+      "decision": "do_not_recommend",
+      "reason": "The 28-day lead time exceeds the 21-day limit, so the lead_time check fails."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "without_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-06-b6841d3e",
+    "sequence_in_setup": 6,
+    "request_index_in_run": 0,
+    "document": "p06_qtextile_quote.pdf",
+    "run_id": "eb9d8998362e",
+    "timestamp_utc": "2026-10-18T23:54:02+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0d6fc1fcc897131e006ad55c1b37d88196814e3d2fd4cd5511",
+    "usage_raw": {
+      "input_tokens": 11824,
+      "input_tokens_details": {
+        "cache_write_tokens": 11821,
+        "cached_tokens": 0
+      },
+      "output_tokens": 501,
+      "output_tokens_details": {
+        "reasoning_tokens": 254
+      },
+      "total_tokens": 12325
+    },
+    "tokens": {
+      "input_tokens": 11824,
+      "cached_tokens": 0,
+      "cache_write_tokens": 11821,
+      "uncached_input_tokens": 3,
+      "output_tokens": 501,
+      "reasoning_tokens": 254,
+      "total_tokens": 12325
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.0,
+      "cache_write": 0.001477625,
+      "output": 0.0002505,
+      "total": 0.001728425
+    },
+    "cache_evidence": {
+      "classification": "no_reuse",
+      "cached_tokens": 0,
+      "cache_write_tokens": 11821,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Quinnipiac Textile Deals",
+      "sku": "CC-TE-017",
+      "sku_source": "document",
+      "unit_price": 7.01,
+      "lead_time_days": 6,
+      "lead_time_basis": "business_days",
+      "min_order": 200,
+      "evidence": [
+        "Quinnipiac Textile Deals",
+        "Campus Customs SKU: CC-TE-017",
+        "Unit price: $7.01",
+        "Minimum order: 200 units",
+        "Lead time: 6 business days"
+      ],
+      "checks": {
+        "approved_vendor": "fail",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "do_not_recommend",
+      "reason": "Quinnipiac Textile Deals is removed, so the approved-vendor check fails; the $7.01 price is below the $8.37 max, 6 business days is within 21 days, and 200 units is within the 600-unit limit."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "without_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-07-94b4d475",
+    "sequence_in_setup": 7,
+    "request_index_in_run": 0,
+    "document": "p07_longwharf_quote.pdf",
+    "run_id": "403247fa246c",
+    "timestamp_utc": "2026-10-18T23:54:07+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0adc55436f20c515006ad55c1fb3e08196a1b352854ace7f57",
+    "usage_raw": {
+      "input_tokens": 11799,
+      "input_tokens_details": {
+        "cache_write_tokens": 11796,
+        "cached_tokens": 0
+      },
+      "output_tokens": 397,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 12196
+    },
+    "tokens": {
+      "input_tokens": 11799,
+      "cached_tokens": 0,
+      "cache_write_tokens": 11796,
+      "uncached_input_tokens": 3,
+      "output_tokens": 397,
+      "reasoning_tokens": 119,
+      "total_tokens": 12196
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.0,
+      "cache_write": 0.0014745,
+      "output": 0.0001985,
+      "total": 0.0016733
+    },
+    "cache_evidence": {
+      "classification": "no_reuse",
+      "cached_tokens": 0,
+      "cache_write_tokens": 11796,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Long Wharf Knitting",
+      "sku": "CC-KN-001",
+      "sku_source": "document",
+      "unit_price": 17.23,
+      "lead_time_days": 7,
+      "lead_time_basis": "business_days",
+      "min_order": 120,
+      "evidence": [
+        "Long Wharf Knitting",
+        "Campus Customs SKU: CC-KN-001",
+        "Unit price: $17.23",
+        "Minimum order: 120 units",
+        "Lead time: 35 business days",
+        "Correction: lead time is now 7 business days thanks to new loom capacity.",
+        "The 35 days shown is our old standard."
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass: Long Wharf Knitting is approved, the $17.23 unit price is at or below the $21.40 max for CC-KN-001, the corrected lead time is 7 days (21 or less), and the 120-unit minimum is 600 or less."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "without_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-08-7d26d2b8",
+    "sequence_in_setup": 8,
+    "request_index_in_run": 0,
+    "document": "p08_chapelst_email.eml",
+    "run_id": "b39c541a6df4",
+    "timestamp_utc": "2026-10-18T23:54:10+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_03dbe8e45314353d006ad55c23876881959c26899913e020dd",
+    "usage_raw": {
+      "input_tokens": 11785,
+      "input_tokens_details": {
+        "cache_write_tokens": 11782,
+        "cached_tokens": 0
+      },
+      "output_tokens": 339,
+      "output_tokens_details": {
+        "reasoning_tokens": 105
+      },
+      "total_tokens": 12124
+    },
+    "tokens": {
+      "input_tokens": 11785,
+      "cached_tokens": 0,
+      "cache_write_tokens": 11782,
+      "uncached_input_tokens": 3,
+      "output_tokens": 339,
+      "reasoning_tokens": 105,
+      "total_tokens": 12124
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.0,
+      "cache_write": 0.00147275,
+      "output": 0.0001695,
+      "total": 0.00164255
+    },
+    "cache_evidence": {
+      "classification": "no_reuse",
+      "cached_tokens": 0,
+      "cache_write_tokens": 11782,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Chapel Street Goods",
+      "sku": "CC-PG-010",
+      "sku_source": "document",
+      "unit_price": 4.27,
+      "lead_time_days": 6,
+      "lead_time_basis": "business_days",
+      "min_order": 250,
+      "evidence": [
+        "Bookmark Set (CC-PG-010)",
+        "Unit price: $4.27",
+        "Minimum order: 250 units",
+        "Lead time: 6 business days",
+        "Chapel Street Goods"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass: Chapel Street Goods is approved, the $4.27 unit price is within the $5.34 maximum for CC-PG-010, lead time is 6 days, and minimum order is 250 units."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "without_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-09-33a3f932",
+    "sequence_in_setup": 9,
+    "request_index_in_run": 0,
+    "document": "p09_westville_email.eml",
+    "run_id": "7d5d1a61f0e8",
+    "timestamp_utc": "2026-10-18T23:54:14+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0833ab6095343d77006ad55c2877448197a013586d67a77293",
+    "usage_raw": {
+      "input_tokens": 11917,
+      "input_tokens_details": {
+        "cache_write_tokens": 11914,
+        "cached_tokens": 0
+      },
+      "output_tokens": 534,
+      "output_tokens_details": {
+        "reasoning_tokens": 253
+      },
+      "total_tokens": 12451
+    },
+    "tokens": {
+      "input_tokens": 11917,
+      "cached_tokens": 0,
+      "cache_write_tokens": 11914,
+      "uncached_input_tokens": 3,
+      "output_tokens": 534,
+      "reasoning_tokens": 253,
+      "total_tokens": 12451
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.0,
+      "cache_write": 0.00148925,
+      "output": 0.000267,
+      "total": 0.00175655
+    },
+    "cache_evidence": {
+      "classification": "no_reuse",
+      "cached_tokens": 0,
+      "cache_write_tokens": 11914,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Westville Bag Co",
+      "sku": "CC-BG-007",
+      "sku_source": "document",
+      "unit_price": 24.82,
+      "lead_time_days": 12,
+      "lead_time_basis": "business_days",
+      "min_order": 144,
+      "evidence": [
+        "Westville Bag Co can make your bags for the spring rush.",
+        "Item: Lunch Cooler (CC-BG-007)",
+        "Unit price: $24.82",
+        "Minimum order: 144 units",
+        "Lead time: 26 business days",
+        "lead time for Campus Customs is now 12 business days (priority queue). This replaces the 26 days shown."
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass: Westville Bag Co is approved, the $24.82 unit price is within the $28.22 max for CC-BG-007, the 12-business-day lead time is within 21 days, and the 144-unit minimum order is within 600 units."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "without_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-10-e0567e6d",
+    "sequence_in_setup": 10,
+    "request_index_in_run": 0,
+    "document": "p10_eastrock_email.eml",
+    "run_id": "349b0b0d8806",
+    "timestamp_utc": "2026-10-18T23:54:20+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0f7aadbccb6d953f006ad55c2dbab081979f8adddba2ab71b1",
+    "usage_raw": {
+      "input_tokens": 11802,
+      "input_tokens_details": {
+        "cache_write_tokens": 11799,
+        "cached_tokens": 0
+      },
+      "output_tokens": 320,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 12122
+    },
+    "tokens": {
+      "input_tokens": 11802,
+      "cached_tokens": 0,
+      "cache_write_tokens": 11799,
+      "uncached_input_tokens": 3,
+      "output_tokens": 320,
+      "reasoning_tokens": 68,
+      "total_tokens": 12122
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.0,
+      "cache_write": 0.001474875,
+      "output": 0.00016,
+      "total": 0.001635175
+    },
+    "cache_evidence": {
+      "classification": "no_reuse",
+      "cached_tokens": 0,
+      "cache_write_tokens": 11799,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "East Rock Ceramics",
+      "sku": "CC-MG-003",
+      "sku_source": "document",
+      "unit_price": 4.87,
+      "lead_time_days": 11,
+      "lead_time_basis": "business_days",
+      "min_order": 96,
+      "evidence": [
+        "Item: Travel Mug (CC-MG-003)",
+        "Unit price: $4.87",
+        "Minimum order: 96 units",
+        "Lead time: 11 business days",
+        "East Rock Ceramics"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass: East Rock Ceramics is approved, the $4.87 unit price is at or below the $6.10 max for CC-MG-003, the 11-day lead time is within the 21-day limit, and the 96-unit minimum is within the 600-unit limit."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "without_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-11-d2a76281",
+    "sequence_in_setup": 11,
+    "request_index_in_run": 0,
+    "document": "p11_yorkst_quote.html",
+    "run_id": "3a5ab56170f7",
+    "timestamp_utc": "2026-10-18T23:54:25+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0f781239bfb89f6d006ad55c321aac81938f447a7eef02ab0d",
+    "usage_raw": {
+      "input_tokens": 11771,
+      "input_tokens_details": {
+        "cache_write_tokens": 11768,
+        "cached_tokens": 0
+      },
+      "output_tokens": 292,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 12063
+    },
+    "tokens": {
+      "input_tokens": 11771,
+      "cached_tokens": 0,
+      "cache_write_tokens": 11768,
+      "uncached_input_tokens": 3,
+      "output_tokens": 292,
+      "reasoning_tokens": 64,
+      "total_tokens": 12063
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.0,
+      "cache_write": 0.001471,
+      "output": 0.000146,
+      "total": 0.0016173
+    },
+    "cache_evidence": {
+      "classification": "no_reuse",
+      "cached_tokens": 0,
+      "cache_write_tokens": 11768,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "York Street Headwear",
+      "sku": "CC-HW-002",
+      "sku_source": "document",
+      "unit_price": 13.62,
+      "lead_time_days": 12,
+      "lead_time_basis": "business_days",
+      "min_order": 180,
+      "evidence": [
+        "York Street Headwear",
+        "Campus Customs SKU | CC-HW-002",
+        "Item | Cuffed Beanie",
+        "Unit price | $13.62",
+        "Minimum order | 180 units",
+        "Lead time | 12 business days"
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "fail",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "do_not_recommend",
+      "reason": "The $13.62 unit price is above the $11.52 max unit cost for CC-HW-002, so the price check fails."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "attempt": 2,
+    "batch_id": "0ee2d8ba",
+    "setup": "without_cache",
+    "cache_mode": "provider_default",
+    "cache_scope": "p4-0ee2d8ba-12-60e23694",
+    "sequence_in_setup": 12,
+    "request_index_in_run": 0,
+    "document": "p12_bluehen_quote.pdf",
+    "run_id": "aeaff1798572",
+    "timestamp_utc": "2026-10-18T23:54:28+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "response_id": "resp_0bbce2fc0eb47470006ad55c351bb48195a420582af69566bb",
+    "usage_raw": {
+      "input_tokens": 11799,
+      "input_tokens_details": {
+        "cache_write_tokens": 11796,
+        "cached_tokens": 0
+      },
+      "output_tokens": 374,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 12173
+    },
+    "tokens": {
+      "input_tokens": 11799,
+      "cached_tokens": 0,
+      "cache_write_tokens": 11796,
+      "uncached_input_tokens": 3,
+      "output_tokens": 374,
+      "reasoning_tokens": 90,
+      "total_tokens": 12173
+    },
+    "cost_usd": {
+      "uncached_input": 3e-07,
+      "cached_input": 0.0,
+      "cache_write": 0.0014745,
+      "output": 0.000187,
+      "total": 0.0016618
+    },
+    "cache_evidence": {
+      "classification": "no_reuse",
+      "cached_tokens": 0,
+      "cache_write_tokens": 11796,
+      "prompt_cache_diagnostics": null
+    },
+    "valid_for_setup": true,
+    "final_response": {
+      "vendor": "Blue Hen Apparel",
+      "sku": "CC-CR-010",
+      "sku_source": "document",
+      "unit_price": 17.44,
+      "lead_time_days": 13,
+      "lead_time_basis": "business_days",
+      "min_order": 200,
+      "evidence": [
+        "Blue Hen Apparel",
+        "Campus Customs SKU: CC-CR-010",
+        "Unit price: $27.72",
+        "Lead time: 13 business days",
+        "Minimum order: 200 units",
+        "Revised quote effective October 1: the unit price is now $17.44 under volume agreement BHA-CC-2026.",
+        "This replaces the unit price shown above."
+      ],
+      "checks": {
+        "approved_vendor": "pass",
+        "price": "pass",
+        "lead_time": "pass",
+        "min_order": "pass"
+      },
+      "decision": "recommend",
+      "reason": "All four purchasing checks pass: Blue Hen Apparel is approved, the $17.44 unit price is at or below the $23.25 max for CC-CR-010, the 13-day lead time is within 21 days, and the 200-unit minimum is within 600 units."
+    },
+    "error": null,
+    "agent_code_version": "70412954419e6569"
+  },
+  {
+    "setup": "diagnostic_probe",
+    "probe": "response-cache A",
+    "request": "first request",
+    "source": "saved by the probe script (full response metadata and headers)",
+    "timestamp_utc": "2026-10-19T00:11:37+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "provider_reported": "azure-openai",
+    "response_id": "resp_04ede5bfee3a467c006ad5603818dc8190b68810928a47bfc4",
+    "response_created_at": 1792368696,
+    "usage_raw": {
+      "input_tokens": 22,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 5,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 27
+    },
+    "response_headers": {
+      "cf-cache-status": "DYNAMIC",
+      "apim-request-id": "825da161-8163-4999-838a-f5b6cb16a7c2",
+      "x-ms-region": "East US 2",
+      "x-ms-served-model": "gpt-6-luna-2026-09-22",
+      "x-request-id": "0c4357b0-e833-401c-91d3-8ba254f4633f"
+    },
+    "replay_assessment": "real call (Azure headers present)"
+  },
+  {
+    "setup": "diagnostic_probe",
+    "probe": "response-cache B",
+    "request": "identical request",
+    "source": "saved by the probe script (full response metadata and headers)",
+    "timestamp_utc": "2026-10-19T00:11:40+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "provider_reported": "azure-openai",
+    "response_id": "resp_04ede5bfee3a467c006ad5603818dc8190b68810928a47bfc4",
+    "response_created_at": 1792368696,
+    "usage_raw": {
+      "input_tokens": 22,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 5,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 27
+    },
+    "response_headers": {},
+    "replay_assessment": "Portkey response-cache replay of A: same response id and created_at, no Azure headers"
+  },
+  {
+    "setup": "diagnostic_probe",
+    "probe": "response-cache C",
+    "request": "identical request + x-portkey-cache-force-refresh: true",
+    "source": "saved by the probe script (full response metadata and headers)",
+    "timestamp_utc": "2026-10-19T00:11:44+00:00",
+    "model_requested": "gpt-6-luna",
+    "model_reported": "gpt-6-luna-global",
+    "provider_reported": "azure-openai",
+    "response_id": "resp_076b2dc727f9bb5a006ad5603ff28c8190be9f63422cff56f4",
+    "response_created_at": 1792368703,
+    "usage_raw": {
+      "input_tokens": 22,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 5,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 27
+    },
+    "response_headers": {
+      "cf-cache-status": "DYNAMIC",
+      "apim-request-id": "c6ae920f-8b4e-4fc7-b755-06e1ed6ff698",
+      "x-ms-region": "East US 2",
+      "x-ms-served-model": "gpt-6-luna-2026-09-22",
+      "x-request-id": "e4b92b0d-144a-4c71-a834-19d52293c023"
+    },
+    "replay_assessment": "real call: x-portkey-cache-force-refresh produced a new response id"
+  }
+]

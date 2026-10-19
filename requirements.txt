@@ -1,0 +1,10 @@
+pydantic-ai-slim[openai]==2.56.0
+python-dotenv==1.2.4
+beautifulsoup4==4.15.0
+pypdf==6.21.1
+tiktoken==0.14.0
+# imported directly (also pulled in by pydantic-ai); pinned to the versions used for every recorded run
+openai==3.35.1
+pydantic==2.14.1
+# offline defense tests only (scripts/defense_offline_tests.py)
+httpx2==2.14.0
